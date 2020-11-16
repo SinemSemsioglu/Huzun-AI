@@ -2,8 +2,15 @@
 const express = require('express');
 const routes = require('./routes.js');
 const bodyParser = require('body-parser');
+const uuid = require('uuid');
 
 let app = express();
+
+// Run the context for each request. Assign a unique identifier to each request
+app.use(function(req, res, next) {
+    req.uniqueId = uuid.v4();
+    next();
+});
 
 // REQUEST SETTINGS
 app.use(bodyParser.urlencoded({
