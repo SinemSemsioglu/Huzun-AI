@@ -7,4 +7,16 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+.main-content {
+  margin-top: 40px;
+}
+.main-content .explanation-text {
+  margin-bottom: 1rem;
+}
+.main-content .db-info {
+  margin-top: 20px;
+}
+.main-content .db-info .info-label {
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */

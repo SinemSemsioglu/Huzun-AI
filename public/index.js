@@ -11,9 +11,13 @@ const initPage = () => {
         sendReq('/generateText',
             {},
             (data) => {
-                $('#db-info').text(JSON.stringify(data));
+                $('#num-elements').text(JSON.stringify(data.num_items));
+                $('#latest-text').text(JSON.stringify(data.last_added.text));
+                $('.db-info').show();
             })
     })
+
+    $('.db-info').hide();
 }
 
 const sendReq = (path, data, successCallback) => {

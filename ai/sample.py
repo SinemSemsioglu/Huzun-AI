@@ -12,10 +12,15 @@ def main():
 
     with open(os.path.join(dirname, 'generated/' + req_id + '.json'), 'w+') as f:
         resp = dict()
-        numKeys = len(data)
-        resp['num_keys'] = numKeys
+        numItems = len(data['submitted'])
+        resp['num_items'] = numItems
         resp['req_id'] = req_id
-        resp['last_added_text'] = data[list(data)[0]]
+
+        if numItems == 0:
+            resp['last_added'] = 'no item added yet'
+        else:
+            resp['last_added'] = data['submitted'][-1]
+
         json.dump(resp, f, ensure_ascii=False, indent=4)
         f.close()
 

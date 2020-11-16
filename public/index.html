@@ -21,7 +21,7 @@
     <div class="viewport">
         <div class="container">
             <h5> Welcome to Huzun Project, TEST PAGE </h5>
-            <div class="row">
+            <div class="main-content row">
                 <div class="col">
                     <form>
                         <div class="form-group">
@@ -33,10 +33,14 @@
                     </form>
                 </div>
                 <div class="col">
-                    <div> For testing you can display some information about the DB by clicking below </div>
-                    <div id="generate-text" class="btn btn-primary">Generate</div>
-                    <div id="db-info">
+                    <div class="explanation-text"> For testing you can display some information about the DB by clicking below </div>
+                    <div id="generate-text" class="btn btn-primary">Get Info</div>
+                    <div class="db-info">
+                        <div class="info-label">Number of Items</div>
+                        <div id="num-elements" class="info-value"></div>
 
+                        <div class="info-label">Latest Added Text</div>
+                        <div id="latest-text" class="info-value"></div>
                     </div>
                 </div>
             </div>
