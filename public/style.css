@@ -3,7 +3,9 @@
 }
 body{
     background-color: #E6E6E6;
-
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 html{
     margin-top: 10px;
@@ -13,37 +15,38 @@ html{
 
 h2{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22.5px;
+    font-size: 16pt;
     text-align: right;
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 14.5px;
+    font-size: 10pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
 .container1{
     display: grid;
-    grid-template-columns: 15fr 60fr 15fr;
+    grid-template-columns: 15fr 60fr 13fr;
     grid-gap: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
 
 
 }
 
 .container2{
     display: grid;
-    grid-template-columns: 15fr 30fr 30fr 15fr;
+    grid-template-columns: 15fr 30fr 30fr 13fr;
     grid-gap: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
 }
 
 .container3{
     display: grid;
-    grid-template-columns: 15fr 20fr 20fr 20fr 15fr;
+    grid-template-columns: 15fr 20fr 20fr 20fr 13fr;
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -51,7 +54,7 @@ p{
 
 .container4{
     display: grid;
-    grid-template-columns: 15fr 40fr 20fr 15fr;
+    grid-template-columns: 15fr 40fr 20fr 13fr;
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -59,7 +62,13 @@ p{
 
 figcaption{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 8.5pt;
+    padding-top: 5px;
+    height: 10px;
+}
+
+figcaption > br{
+    line-height: 0px;
 }
 
 .photo{
@@ -83,7 +92,7 @@ li {
     float: left;
     display: block;
     padding: 8px;
-    font-size: 22.5px;
+    font-size: 16pt;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -93,8 +102,12 @@ ul {
     padding: 0;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 15fr 60fr 15fr;
+    grid-template-columns: 15fr 60fr 13fr;
     grid-gap: 10px;
+
+/*    position: fixed;
+    top: 0;
+    width: 100%;*/
 }
 
 .flex-container{
@@ -119,6 +132,12 @@ li:last-child{
     right-margin: 5px;
 }
 
+li a:hover {
+    text-decoration: none;
+    opacity: 1;
+    color: black;
+}
+
 #language > a{
     opacity: 1;
 }
@@ -127,12 +146,20 @@ li:last-child{
 #p1 {
     color: #93278F;
     font-family: 'Roboto', sans-serif;
-    font-size: 18.5px;
+    font-size: 13pt;
 }
 
 
-hr .container1::before{
-    border-bottom: 1.5px solid gray;
+.container_line{
+    display: grid;
+    grid-template-columns: 15fr 60fr 13fr;
+    grid-gap: 14px;
+    height: 25px;
 
 }
 
+hr{
+    border: 0.5px solid dimgray;
+    background-color: dimgray;
+
+}
