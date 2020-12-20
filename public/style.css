@@ -7,11 +7,14 @@ body{
     margin-right: 30px;
     margin-bottom: 20px;
 }
-html{
-    margin-top: 10px;
 
+html {
+    scroll-padding-top: 55px;
 }
 
+main{
+    margin-top: 55px;
+}
 
 h2{
     font-family: 'Roboto Condensed', sans-serif;
@@ -91,23 +94,25 @@ li {
 
     float: left;
     display: block;
-    padding: 8px;
     font-size: 16pt;
     font-family: 'Roboto Condensed', sans-serif;
 
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
     display: grid;
     grid-template-columns: 15fr 60fr 13fr;
     grid-gap: 10px;
+    background-color: #E6E6E6;
+    padding-left: 10px;
+    padding-right: 70px;
 
-/*    position: fixed;
-    top: 0;
-    width: 100%;*/
+
 }
 
 .flex-container{
@@ -161,5 +166,4 @@ li a:hover {
 hr{
     border: 0.5px solid dimgray;
     background-color: dimgray;
-
 }
