@@ -111,7 +111,7 @@ ul {
     background-color: #E6E6E6;
     padding-left: 10px;
     padding-right: 70px;
-
+    z-index:999;
 
 }
 
@@ -140,6 +140,10 @@ li:last-child{
 li a:hover {
     text-decoration: none;
     opacity: 1;
+    color: black;
+}
+
+.active {
     color: black;
 }
 
