@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>HÜZÜN PROJECT</title>
 </head>
@@ -14,12 +15,15 @@
 <nav>
         <ul>
             <li><img id="logo" src=hüzün_project_logo.png></li>
-            <div class="flex-container">
+            <div class="flex-container" id="myTopnav">
                 <li><a href=#about>ABOUT</a></li>
                 <li><a href=#huzun.archive>HUZUN.<b>archive</b></a></li>
                 <li><a href=#a.i.huzun><b>A.I</b>.HUZUN</a></li>
                 <li><a href=#huzun.explorations>HUZUN.<b>explorations</b></a></li>
                 <li><a href=#contact>CONTACT</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
             <li id="language"><a href=#tr>TR</a> | <a href=#en>EN</a></li>
         </ul>
