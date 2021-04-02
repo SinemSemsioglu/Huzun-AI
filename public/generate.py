@@ -3,6 +3,7 @@ import os
 import tensorflow as tf
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 
 one_step_reloaded = tf.saved_model.load('one_step')
 states = None
