@@ -7,7 +7,7 @@ const initPage = () => {
         })
     })
 
-    $('#generate-text').click(()=> {
+    /*$('#generate-text').click(()=> {
         sendReq('/generateText',
             {},
             (data) => {
@@ -15,6 +15,15 @@ const initPage = () => {
                 $('#latest-text').text(JSON.stringify(data.last_added.text));
                 $('.db-info').show();
             })
+    })*/
+
+    $('#generate-text').click(()=> {
+        sendReq('/generateText',
+          {startWord: $('#exampleTextInput').val(), wordCount: 200},
+          (data) => {
+              $('#latest-text').text(JSON.stringify(data.data));
+              $('.db-info').show();
+          })
     })
 
     $('.db-info').hide();
