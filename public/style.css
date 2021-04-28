@@ -53,6 +53,8 @@ p{
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 100%;
+    width: 100%;
 }
 
 .container4{
@@ -176,6 +178,49 @@ hr{
     display: none;
 }
 
+#HüzünlüTextInput{
+    height: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: whitesmoke;
+    border-right-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    outline: none;
+    display:block;
+    padding: 15px;
+}
+#HüzünlüText{
+    height: 100%;
+    width: 100%;
+}
+
+#formh{
+    height: 100%;
+    width: 100%;
+}
+
+.form-group{
+    position: relative;
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#generate-text{
+    background-color: white;
+    border-radius: 50%;
+    color: mediumvioletred;
+    border-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .container1 {grid-template-columns: 1fr;}
@@ -189,21 +234,26 @@ hr{
     .container_line { grid-template-columns: 1fr;
     }
 
-    nav a:not(:first-child) {display: none;}
-    .icon {
+    a:not(:first-child) {display: none;}
+    a.icon {
         float: right;
         display: block;
     }
-    nav.responsive {position: relative;}
-    nav.responsive a.icon {
+
+    .flex-container.responsive {position: relative;}
+    .flex-container.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    nav.responsive a {
+    .flex-container.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
+
+
+
+
 
 }

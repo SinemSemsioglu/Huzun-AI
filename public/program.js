@@ -12,9 +12,60 @@ $('a[href*="#"]').on('click', function (e) {
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "nav") {
+    if (x.className === "flex-container") {
         x.className += " responsive";
     } else {
-        x.className = "nav";
+        x.className = "flex-container";
     }
 }
+
+const initPage = () => {
+    /*$('#save-text').click(()=> {
+        sendReq('/saveText',
+            {text: $('#HüzünlüTextInput').val()},
+            () => {
+                alert('text saved successfully');
+            })
+    })*/
+
+    /*$('#generate-text').click(()=> {
+        sendReq('/generateText',
+            {},
+            (data) => {
+                $('#num-elements').text(JSON.stringify(data.num_items));
+                $('#latest-text').text(JSON.stringify(data.last_added.text));
+                $('.db-info').show();
+            })
+    })*/
+
+    $('#generate-text').click(()=> {
+        sendReq('/generateText',
+            {startWord: "araba", wordCount: 200},
+            (data) => {
+                $('#HüzünlüTextInput').text(JSON.stringify(data.data));
+                // $('.form-group').show();
+            })
+    })
+
+    // $('.form-group').hide();
+}
+
+const sendReq = (path, data, successCallback) => {
+    $.ajax({
+        type: "POST",
+        url: path,
+        contentType: "application/json",
+        data: JSON.stringify(data),
+        success: async (resp) => {
+            if (resp.success) {
+                successCallback(resp.data)
+            } else {
+                alert('problem with request')
+            }
+        },
+        dataType: "json"
+    });
+}
+
+
+initPage();
