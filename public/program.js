@@ -19,6 +19,8 @@ function myFunction() {
     }
 }
 
+
+
 const initPage = () => {
     /*$('#save-text').click(()=> {
         sendReq('/saveText',
@@ -40,9 +42,9 @@ const initPage = () => {
 
     $('#generate-text').click(()=> {
         sendReq('/generateText',
-            {startWord: "araba", wordCount: 200},
+            {startWord: $('#HüzünlüTextInput').val(), wordCount: 200},
             (data) => {
-                $('#HüzünlüTextInput').text(JSON.stringify(data.data));
+                $('#HüzünlüTextInput').val(JSON.stringify(data.data));
                 // $('.form-group').show();
             })
     })
@@ -53,6 +55,7 @@ const initPage = () => {
 const sendReq = (path, data, successCallback) => {
     $.ajax({
         type: "POST",
+        timeout: 60000,
         url: path,
         contentType: "application/json",
         data: JSON.stringify(data),
@@ -69,3 +72,4 @@ const sendReq = (path, data, successCallback) => {
 
 
 initPage();
+

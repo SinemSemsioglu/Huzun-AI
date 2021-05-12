@@ -3,11 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>HÜZÜN PROJECT</title>
 </head>
@@ -102,40 +107,80 @@
         interviewed and shed light on their
                 understanding of the word Hüzün.</span></p>
     </div>
-    <div>
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/330218901?color=ffffff&title=0&byline=0&portrait=0"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                    allow="autoplay; fullscreen" allowfullscreen allowtransparency="">
-            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        <figure>
-        <figcaption>Fuat Balcı,
-            <br>
-            <i>Koç University</i></figcaption>
-        </figure>
-        <!--<figure>
-        <img class="photo" src="hüzün_project_photo1.png">
-        <figcaption>Maureen Freely,
-        <br>
-            <i>English Translator of the book Istanbul</i></figcaption>
-        </figure>-->
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <!--<ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>-->
+
+        <!-- The slideshow -->
+        <div class="container carousel-inner no-padding">
+            <div class="carousel-item active" id="first-carousel">
+                <div>
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/330218901?color=ffffff&title=0&byline=0&portrait=0"
+                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                    allow="autoplay; fullscreen" allowfullscreen allowtransparency="">
+                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        <figure>
+                            <figcaption>Fuat Balcı,
+                                <br>
+                                <i>Koç University</i></figcaption>
+                        </figure>
+                        <!--<figure>
+                        <img class="photo" src="hüzün_project_photo1.png">
+                        <figcaption>Maureen Freely,
+                        <br>
+                            <i>English Translator of the book Istanbul</i></figcaption>
+                        </figure>-->
+                </div>
+                <div>
+                        <figure>
+                            <img class="photo" src="hüzün_project_photo3.png">
+                            <figcaption>Nergis Dolcerocca,
+                                <br>
+                                <i>Koç University</i></figcaption>
+                        </figure>
+                </div>
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">
+                    <div>
+                        <figure>
+                            <img class="photo" src="hüzün_project_photo2.png">
+                            <figcaption>Erol Köroğlu,
+                                <br>
+                                <i>Boğaziçi University</i></figcaption>
+                        </figure>
+                    </div>
+                </div>-->
+            </div>
+            <!--<div class="carousel-item" id="second-carousel">
+                <div>
+
+                                        <figure>
+                                            <img class="photo" src="hüzün_project_photo2.png">
+                                            <figcaption>Erol Köroğlu,
+                                                <br>
+                                                <i>Boğaziçi University</i></figcaption>
+                                        </figure>
+
+                </div>
+            </div>-->
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span id="slider-prev"><b><</b></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span id="slider-next"><b>></b></span>
+        </a>
     </div>
-    <div>
-        <figure>
-        <img class="photo" src="hüzün_project_photo3.png">
-        <figcaption>Nergis Dolcerocca,
-            <br>
-            <i>Koç University</i></figcaption>
-        </figure>
-    </div>
-    <div>
-        <figure>
-        <img class="photo" src="hüzün_project_photo2.png">
-        <figcaption>Erol Köroğlu,
-            <br>
-            <i>Boğaziçi University</i></figcaption>
-        </figure>
-    </div>
+
 </div>
 </section>
 <div class="container_line" id = "a.i.huzun">
@@ -148,7 +193,7 @@
     </div>
 </div>
 <section>
-   <div class="container3">
+   <div class="container4">
        <div>
            <h2><b>A.I</b>.HÜZÜN</h2>
        </div>
@@ -172,8 +217,7 @@
         <div id="formh">
             <form>
                 <div class="form-group" id="HüzünlüText">
-                    <textarea id="HüzünlüTextInput" rows="12">Press GO for A.I.HÜZÜN to start togenerating "Hüzünlü" texts_
-                    </textarea>
+                    <textarea id="HüzünlüTextInput" rows="12"  placeholder='Press GO for A.I.HÜZÜN to start togenerating "Hüzünlü" texts_' contenteditable="true"></textarea>
                     <div id="generate-text" class="btn btn-primary">GO</div>
                 </div>
             </form>
@@ -194,7 +238,7 @@
     </div>
 </div>
 <section>
-    <div class="container3">
+    <div class="container4">
         <div>
             <h2>HÜZÜN.<b>explorations</b></h2>
         </div>
@@ -231,7 +275,7 @@
     </div>
 </div>
 <section>
-    <div class="container4">
+    <div class="container5">
         <div>
             <h2>CONTACT</h2>
         </div>
@@ -255,5 +299,7 @@
     </div>
 </section>
 </main>
+<script src="./program.js"></script>
 </body>
+
 </html>

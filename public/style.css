@@ -49,7 +49,7 @@ p{
 
 .container3{
     display: grid;
-    grid-template-columns: 15fr 20fr 20fr 20fr 13fr;
+    grid-template-columns: 15fr 20fr 40fr 13fr;
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -58,6 +58,16 @@ p{
 }
 
 .container4{
+    display: grid;
+    grid-template-columns: 15fr 20fr 20fr 20fr 13fr;
+    grid-gap: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.container5{
     display: grid;
     grid-template-columns: 15fr 40fr 20fr 13fr;
     grid-gap: 20px;
@@ -219,6 +229,55 @@ hr{
     position: absolute;
     bottom:15px;
     right:15px;
+}
+
+.col-md-3{
+    display: inline-block;
+    margin-left:-4px;
+}
+.col-md-3 img{
+    width:100%;
+    height:auto;
+}
+/*body .carousel-indicators li{
+    background-color:red;
+}
+body .carousel-indicators{
+    bottom: 0;
+}*/
+#slider-next,
+#slider-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 9pt;
+    width: 30px;
+    height: 30px;
+    color: mediumvioletred;
+    border-color: white;
+
+}
+body .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#first-carousel{
+    display: grid;
+    grid-template-columns: 20fr 20fr;
+    grid-gap: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#second-carousel{
+    display: grid;
+    grid-template-columns: 20fr 20fr;
+    grid-gap: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 768px) {
