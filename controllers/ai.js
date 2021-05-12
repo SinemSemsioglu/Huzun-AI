@@ -7,7 +7,7 @@ const aiPath = path.join(__dirname, '../ai');
 
 
 const generate = async(req, res) => {
-    const python = spawn('python', [aiPath + '/generate.py', req.uniqueId, req.body.startWord, req.body.wordCount]);
+    const python = spawn('python3', [aiPath + '/generate.py', req.uniqueId, req.body.startWord, req.body.wordCount]);
 
     python.stdout.on('data', (data) => {
         console.log("from python: " + data.toString());
