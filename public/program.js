@@ -10,6 +10,27 @@ $('a[href*="#"]').on('click', function (e) {
     )
 })
 
+
+$(document).ready(function(){
+    // Activate Carousel
+    $("#demo").carousel({
+        interval: false
+    });
+
+    // Enable Carousel Controls
+    $(".carousel-control-prev").click(function(){
+        $("#demo").carousel("prev");
+    });
+    $(".carousel-control-next").click(function(){
+        $("#demo").carousel("next");
+    });
+});
+
+
+
+
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "flex-container") {
@@ -20,15 +41,14 @@ function myFunction() {
 }
 
 
-
 const initPage = () => {
-    /*$('#save-text').click(()=> {
+    $('#save-text').click(()=> {
         sendReq('/saveText',
-            {text: $('#HüzünlüTextInput').val()},
+            {text: $('#contribute').val()},
             () => {
                 alert('text saved successfully');
             })
-    })*/
+    })
 
     /*$('#generate-text').click(()=> {
         sendReq('/generateText',
@@ -70,6 +90,22 @@ const sendReq = (path, data, successCallback) => {
     });
 }
 
-
 initPage();
+
+$('.carousel').carousel({
+    interval: false,
+})
+
+function checkitem()
+{
+    var $this = $('.control');
+    if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
+        $this.children('.carousel-control-prev').hide();
+    } else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
+        $this.children('.carousel-control-next').hide();
+    } else {
+        $this.children('.carousel-control').show();
+
+    }
+}
 

@@ -52,7 +52,7 @@ p{
     grid-template-columns: 15fr 20fr 40fr 13fr;
     grid-gap: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     height: 100%;
     width: 100%;
 }
@@ -231,6 +231,89 @@ hr{
     right:15px;
 }
 
+#contribute{
+    height: 180px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: whitesmoke;
+    border-right-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    outline: none;
+    display:block;
+    padding: 15px;
+}
+
+#save-text{
+    background-color: white;
+    border-radius: 50%;
+    color: mediumvioletred;
+    border-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 11pt;
+    justify-content: center;
+    padding-top: 7px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+}
+
+#email-text {
+    width: 100%;
+    border-width: 0.001px;
+    background-color: whitesmoke;
+    border-top-color: black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    outline: none;
+    display: block;
+    padding-left: 15px;
+}
+
+#contact-text {
+    height: 140px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: whitesmoke;
+    border-right-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    outline: none;
+    display: block;
+    padding: 15px;
+}
+
+#send-email{
+    background-color: white;
+    border-radius: 50%;
+    color: mediumvioletred;
+    border-color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 11pt;
+    justify-content: center;
+    padding-top: 7px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+}
+
 .col-md-3{
     display: inline-block;
     margin-left:-4px;
@@ -264,7 +347,7 @@ body .no-padding{
     padding-right: 0;
 }
 
-#first-carousel{
+/*#first-carousel{
     display: grid;
     grid-template-columns: 20fr 20fr;
     grid-gap: 20px;
@@ -278,6 +361,17 @@ body .no-padding{
     grid-gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+}*/
+
+.double-slide{
+    flex-basis: 48%;
+    padding-bottom: 10px;
+}
+
+.double-slide-container.active{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 @media only screen and (max-width: 768px) {

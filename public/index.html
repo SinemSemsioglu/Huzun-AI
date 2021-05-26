@@ -3,11 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -22,9 +29,9 @@
             <li><img id="logo" src=hüzün_project_logo.png></li>
             <div class="flex-container" id="myTopnav">
                 <li><a href=#about>ABOUT</a></li>
-                <li><a href=#huzun.archive>HUZUN.<b>archive</b></a></li>
-                <li><a href=#a.i.huzun><b>A.I</b>.HUZUN</a></li>
-                <li><a href=#huzun.explorations>HUZUN.<b>explorations</b></a></li>
+                <li><a href=#huzun_archive>HUZUN.<b>archive</b></a></li>
+                <li><a href=#ai_huzun><b>A.I</b>.HUZUN</a></li>
+                <li><a href=#huzun_explorations>HUZUN.<b>explorations</b></a></li>
                 <li><a href=#contact>CONTACT</a></li>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -86,7 +93,7 @@
     </div>
 </div>
 </section>
-<div class="container_line" id = "huzun.archive">
+<div class="container_line" id = "huzun_archive">
     <div>
     </div>
     <div>
@@ -109,7 +116,7 @@
     </div>
 
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel" data-ride="carousel">
 
         <!-- Indicators -->
         <!--<ul class="carousel-indicators">
@@ -119,14 +126,14 @@
         </ul>-->
 
         <!-- The slideshow -->
-        <div class="container carousel-inner no-padding">
-            <div class="carousel-item active" id="first-carousel">
-                <div>
-                        <div style="padding:56.25% 0 0 0;position:relative;">
-                            <iframe src="https://player.vimeo.com/video/330218901?color=ffffff&title=0&byline=0&portrait=0"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-                                    allow="autoplay; fullscreen" allowfullscreen allowtransparency="">
-                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="carousel-inner">
+            <div class="carousel-item active double-slide-container" id="first-carousel">
+                <div class="double-slide">
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/330218901?color=ffffff&title=0&byline=0&portrait=0"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen" allowfullscreen allowtransparency="">
+                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         <figure>
                             <figcaption>Fuat Balcı,
                                 <br>
@@ -138,15 +145,15 @@
                         <br>
                             <i>English Translator of the book Istanbul</i></figcaption>
                         </figure>-->
-                </div>
-                <div>
+                    </div>
+                    <div class="double-slide">
                         <figure>
                             <img class="photo" src="hüzün_project_photo3.png">
                             <figcaption>Nergis Dolcerocca,
                                 <br>
                                 <i>Koç University</i></figcaption>
                         </figure>
-                </div>
+                    </div>
 <!--                <div class="col-xs-3 col-sm-3 col-md-3">
                     <div>
                         <figure>
@@ -158,32 +165,41 @@
                     </div>
                 </div>-->
             </div>
-            <!--<div class="carousel-item" id="second-carousel">
-                <div>
-
-                                        <figure>
-                                            <img class="photo" src="hüzün_project_photo2.png">
-                                            <figcaption>Erol Köroğlu,
-                                                <br>
-                                                <i>Boğaziçi University</i></figcaption>
-                                        </figure>
-
+            <div class="carousel-item double-slide-container" id="second-carousel">
+                <div class="double-slide">
+                    <figure>
+                        <img class="photo" src="hüzün_project_photo2.png">
+                        <figcaption>Erol Köroğlu,
+                            <br>
+                            <i>Boğaziçi University</i></figcaption>
+                    </figure>
                 </div>
-            </div>-->
+            </div>
         </div>
 
         <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span id="slider-prev"><b><</b></span>
+        <a class="carousel-control-prev control" data-slide="prev">
+            <span id="slider-prev">
+                <svg width="5px" height="5px" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke=mediumvioletred stroke-width="20" stroke-linecap="round" stroke-linejoin="round" points="
+                    45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                </svg>
+            </span>
+
         </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span id="slider-next"><b>></b></span>
+        <a class="carousel-control-next control" data-slide="next">
+            <span id="slider-next">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5px" height="5px" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke=mediumvioletred stroke-width="20" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </span>
         </a>
     </div>
 
 </div>
 </section>
-<div class="container_line" id = "a.i.huzun">
+<div class="container_line" id = "ai_huzun">
     <div>
     </div>
     <div>
@@ -228,7 +244,7 @@
     </div>
    </div>
 </section>
-<div class="container_line" id = "huzun.explorations">
+<div class="container_line" id = "huzun_explorations">
     <div>
     </div>
     <div>
@@ -260,6 +276,12 @@
             </figure>
         </div>
         <div>
+            <form>
+                <div class="form-group">
+                    <textarea id="contribute" rows="12"  placeholder='We would be happy if you can CONTRIBUTE with any texts, books, songs that has the “Hüzün” in it_' contenteditable="true"></textarea>
+                    <div id="save-text" class="btn btn-primary">SEND</div>
+                </div>
+            </form>
         </div>
         <div>
         </div>
@@ -293,6 +315,28 @@
             A.I.HÜZÜN, whether they have the notion of “HÜZÜN” or not.</p>
     </div>
         <div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script type="text/javascript">
+                function sendEmail() {
+                    Email.send({
+                        Host: "bozer17@ku.edu.tr",
+                        Username: "bozer17@ku.edu.tr",
+                        Password: "",
+                        To: 'bozer17@ku.edu.tr',
+                        From: "bozer17@ku.edu.tr",
+                        Subject: "Sending Email using javascript",
+                        Body: "Well that was easy!!",
+                    })
+                        .then(function (message) {
+                            alert("mail sent successfully")
+                        });
+                }
+            </script>
+            <form method="post" class="form-group">
+                    <input id="email-text" type="email" placeholder="Your email here">
+                    <textarea id="contact-text" placeholder='Leave a message to A.I.HÜZÜN.' contenteditable="true"></textarea>
+                <div id="send-email" class="btn btn-primary" onclick="sendEmail()">SEND</div>
+            </form>
         </div>
         <div>
         </div>
