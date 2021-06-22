@@ -116,6 +116,7 @@ ul {
     position: fixed;
     padding-top: 20px;
     padding-bottom: 10px;
+    height: 70px;
     width: 100%;
     display: grid;
     grid-template-columns: 15fr 60fr 13fr;
