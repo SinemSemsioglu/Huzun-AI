@@ -9,21 +9,58 @@ $('a[href*="#"]').on('click', function (e) {
         'linear'
     )
 })
+$( '#myTopnav a' ).on( 'click', function () {
+    $( '#myTopnav' ).find( '.active' ).removeClass( 'active' );
+    $( this ).addClass( 'active' );
+});
 
+// highlight navbar with scroll
+/*$(document).ready(function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#myTopnav li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#myTopnav li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+});*/
 
 $(document).ready(function(){
     // Activate Carousel
-    $("#demo").carousel({
+    $("#carousel-slide").carousel({
         interval: false
     });
 
     // Enable Carousel Controls
     $(".carousel-control-prev").click(function(){
-        $("#demo").carousel("prev");
+        $("#carousel-slide").carousel("prev");
     });
     $(".carousel-control-next").click(function(){
-        $("#demo").carousel("next");
+        $("#carousel-slide").carousel("next");
     });
+
+    var checkitem = function () {
+        var $this;
+        $this = $("#carousel-slide");
+        if ($(".carousel-inner .carousel-item:first").hasClass("active")) {
+            $this.children(".carousel-control-prev.control").hide();
+            $this.children(".carousel-control-next.control").show();
+        } else if ($(".carousel-inner .carousel-item:last").hasClass("active")) {
+            $this.children(".carousel-control-next.control").hide();
+            $this.children(".carousel-control-prev.control").show();
+        } else {
+            $this.children(".carousel-control").show();
+        }
+    };
+
+    checkitem();
+    $("#carousel-slide").on("slid.bs.carousel", "", checkitem);
+
 });
 
 
@@ -92,20 +129,6 @@ const sendReq = (path, data, successCallback) => {
 
 initPage();
 
-$('.carousel').carousel({
-    interval: false,
-})
 
-function checkitem()
-{
-    var $this = $('.control');
-    if ($('.carousel-inner .carousel-item:first').hasClass('active')) {
-        $this.children('.carousel-control-prev').hide();
-    } else if ($('.carousel-inner .carousel-item:last').hasClass('active')) {
-        $this.children('.carousel-control-next').hide();
-    } else {
-        $this.children('.carousel-control').show();
 
-    }
-}
 

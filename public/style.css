@@ -150,15 +150,20 @@ li:last-child{
     right-margin: 5px;
 }
 
-li a:hover {
+a:hover {
     text-decoration: none;
     opacity: 1;
     color: black;
 }
 
-.active {
+
+a.active {
+    text-decoration: none;
+    opacity: 1;
     color: black;
 }
+
+
 
 #language > a{
     opacity: 1;
@@ -329,11 +334,11 @@ hr{
 body .carousel-indicators{
     bottom: 0;
 }*/
-#slider-next,
-#slider-prev{
+#slider-next{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     background-color: white;
     border-radius: 50%;
     font-size: 9pt;
@@ -341,8 +346,33 @@ body .carousel-indicators{
     height: 30px;
     color: mediumvioletred;
     border-color: white;
-
+    right: -15px;
+    top: 30%;
 }
+
+#slider-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 9pt;
+    width: 30px;
+    height: 30px;
+    color: mediumvioletred;
+    border-color: white;
+    left: -15px;
+    top: 30%;
+}
+
+.control{
+    opacity: 0.8;
+}
+.control:hover {
+    opacity: 1;
+}
+
 body .no-padding{
     padding-left: 0;
     padding-right: 0;
@@ -374,6 +404,7 @@ body .no-padding{
     justify-content: space-between;
 
 }
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
