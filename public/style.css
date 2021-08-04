@@ -413,6 +413,7 @@ body .no-padding{
     .container2 {grid-template-columns: 1fr;}
     .container3 {grid-template-columns: 1fr;}
     .container4 {grid-template-columns: 1fr;}
+    .container5 {grid-template-columns: 1fr;}
     h2{
         text-align: center;
         margin-top: 10px;
