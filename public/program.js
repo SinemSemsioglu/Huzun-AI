@@ -101,7 +101,7 @@ const initPage = () => {
         sendReq('/generateText',
             {startWord: $('#HüzünlüTextInput').val(), wordCount: 200},
             (data) => {
-                $('#HüzünlüTextInput').val(JSON.stringify(data.data));
+                $('#HüzünlüTextInput').val(JSON.stringify(data));
                 // $('.form-group').show();
             })
     })

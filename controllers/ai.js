@@ -20,7 +20,12 @@ const generate = async(req, res) => {
         if(code == 0) {
             // read json data
             let data = fs.readFileSync(aiPath + '/generated/' + req.uniqueId + '.json');
-            res.send({success: true, data: JSON.parse(JSON.parse(data))});
+            data = JSON.parse(data).data;
+            //console.log(typeof data);
+            //console.log(data);
+            data = data.replace("\\r\\n", " ");
+            data = data.replace("\\", "");            
+            res.send({success: true, data: data});
         } else {
             res.send({success: false})
         }
