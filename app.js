@@ -30,8 +30,9 @@ app.get('/', function (req, res) {
 });
 
 // START THE SERVER
-let server = app.listen(process.env.PORT || 8080, () => {
-    console.log('Listening');
+let port = process.env.PORT || 8080;
+let server = app.listen(port, () => {
+    console.log('Listening on ' + port);
     console.log("Server initialization successful!")
 });
 

@@ -11,7 +11,8 @@ req_id = sys.argv[1]
 def main():
     with open(os.path.join(dirname, 'generated/' + req_id + '.json'), 'w+', encoding='utf-8') as f:
         resp = dict()
-        one_step_reloaded = tf.saved_model.load(dirname+'/one_step')
+        model_path = os.path.join(dirname, 'one_step')
+        one_step_reloaded = tf.saved_model.load(model_path)
         states = None
         next_char = tf.constant([sys.argv[2]])
         result = [next_char]
